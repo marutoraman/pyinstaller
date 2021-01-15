@@ -19,7 +19,12 @@ distフォルダ内にexeファイルが作成されます。
 ただし、windowsの場合限定かもしれませんが、作ったexeファルルがウィルス判定されて実行できないことがあります。
 これを防ぐための手法として特別な方法でインストールする必要があります。
 
-windows用のバッチファイルを置いておくので、ご活用ください。(instal-pyinstaller.bat)
+# コマンド
+以下コマンドを順位実行して、最後にバージョンが表示されれば成功です。<BR>
+git clone https://github.com/pyinstaller/pyinstaller <BR>
+python ./pyinstaller/bootloader/waf distclean all <BR>
+python ./pyinstaller/setup.py install <BR>
+pyinstaller --version <BR>
 
 
 
